@@ -1,0 +1,8 @@
+rm /bin/su
+rm /xbin/su
+cd xbin
+write /data/local/su su
+set_inode_field su mode 0106755
+set_inode_field su uid 0
+set_inode_field su gid 0
+quit
